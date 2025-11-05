@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="tutorials.html" class="nav-link">Tutorials</a>
+<a href="match.html" class="nav-link">Matchmaking</a>
+<a href="about.html" class="nav-link">About Us</a>
+</nav>
+</header>
+
+
+<main>
+<section class="page-container">
+<h2>🎥 Video Tutorials</h2>
+<p class="lead">Watch tutorials made by your peers — add yours by pasting a video URL (YouTube/Vimeo) or local file URL.</p>
+
+
+<form id="tutorialForm" class="form-grid" onsubmit="return false;">
+<input id="tTitle" class="cute-input" placeholder="Tutorial title (e.g. Cute Cupcakes 101)" required>
+<input id="tUrl" class="cute-input" placeholder="Video URL (https://...) or local path (videos/mine.mp4)" required>
+<textarea id="tDesc" class="cute-input" placeholder="Short description" rows="3"></textarea>
+<div style="text-align:center;">
+<button class="btn" id="addTutorialBtn">Add Tutorial ✨</button>
+</div>
+</form>
+
+
+<hr style="margin:30px 0; opacity:0.08;" />
+
+
+<div id="tutorialList" class="tutorial-gallery"></div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>Made with 💜 by <strong>Group 5</strong> as their Capstone Project • © 2025</p>
+</footer>
+
+
+<script src="js/tutorials.js"></script>
+</body>
+</html>

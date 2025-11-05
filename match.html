@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SkillSwap 💜 | Matchmaking</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="site-header">
+<div class="brand">
+<h1>SkillSwap 💜</h1>
+<p class="tag">Share a skill • Find a buddy • Make friends</p>
+</div>
+
+
+<nav class="nav">
+<a href="index.html" class="nav-link">Home</a>
+<a href="tutorials.html" class="nav-link">Tutorials</a>
+<a href="match.html" class="nav-link">Matchmaking</a>
+<a href="about.html" class="nav-link">About Us</a>
+</nav>
+</header>
+
+
+<main>
+<section class="page-container">
+<h2>💞 Find a Skill Buddy</h2>
+<p class="lead">Enter your details and we'll search the local community stored in your browser for complementary matches.</p>
+
+
+<form id="matchForm" class="form-grid" onsubmit="return false;">
+<input id="uName" class="cute-input" placeholder="Your name (e.g. Aya)" required>
+<input id="uTeach" class="cute-input" placeholder="I can teach (e.g. Baking)" required>
+<input id="uLearn" class="cute-input" placeholder="I want to learn (e.g. Guitar)" required>
+<div style="text-align:center;">
+<button class="btn" id="saveBtn">Save & Find Matches 💕</button>
+</div>
+</form>
+
+
+<hr style="margin:24px 0; opacity:0.06;" />
+
+
+<div id="matchResults"></div>
+
+
+<hr style="margin:24px 0; opacity:0.06;" />
+
+
+<div>
+<h4>Community (local)</h4>
+<p class="small">All users saved in this browser (you can clear them anytime).</p>
+<div id="communityList"></div>
+<div style="text-align:center; margin-top:12px;">
+<button class="btn ghost" id="clearStorageBtn">Clear Local Data</button>
+</div>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>Made with 💜 by <strong>Group 5</strong> as their Capstone Project • © 2025</p>
+</footer>
+
+
+<script src="js/match.js"></script>
+</body>
+</html>
